@@ -1,15 +1,12 @@
-.products {
-    padding: 5px;
-}
-
-.products__list .product-card {
-    border: 1px solid var(--border-color);
-    padding: 5px
-}
-
 .products__list {
     display: grid;
     gap: 5px;
+
+    .product-card {
+        border: 1px solid var(--border-color);
+        padding: 5px;
+    }
+
 }
 
 @media (min-width: 600px) {
@@ -17,7 +14,7 @@
     .products__list {
         grid-template-columns: 1fr 1fr;
     }
-
+    
 }
 
 @media (min-width: 900px) {
@@ -25,7 +22,7 @@
     .products__list {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    
 }
 
 @media (min-width: 1200px) {
@@ -33,5 +30,5 @@
     .products__list {
         grid-template-columns: repeat(4, 1fr);
     }
-
+    
 }
